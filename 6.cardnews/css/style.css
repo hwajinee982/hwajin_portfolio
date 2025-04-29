@@ -1,0 +1,58 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  background-color: #a4cef3;
+  /* background:url(../images/bg4_1.jpg) no-repeat center; */
+  background-size: 100% auto;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent; /* 슬라이드 배경도 투명하게 설정 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+}
+
+.swiper-pagination{transform: translateY(-60px);}
+.swiper-button-next{transform: translateX(-400px);}
+.swiper-button-prev{transform: translateX(400px);}
+
+.swiper-button-next:after, .swiper-button-prev:after {color: white;}
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: #3391e1 !important;
+    width: 30px !important;
+    border-radius: 5px !important;
+    transition: width 0.5s;
+}
+
+.swiper-pagination-bullet {
+  background: var(--swiper-pagination-bullet-inactive-color, #ffffff);
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 1);
+}
